@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+
+*{
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #F8F9FA;
+  height:100vh;
+}
+
+header{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  background: #123;
+  border:3px solid darkorange;
+
+
+}
+.logo{
+  color: orangered;
+} 
+nav{
+  width:60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color:white;
+  transition: 0.5s;
+} 
+
+
+nav ul{
+  width:60%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li{
+  list-style: none;
+}
+nav ul li a{
+  padding: 10px;
+  text-decoration: none;
+  color:white;
+  transition: 0.5s;
+}nav ul li a:hover{background: gold; border-radius: 5px; border:5px solid orangered; color:black}
+
+.content{
+  width:100%;
+  height:600px;
+  display:flex;
+  justify-content: space-between;
+  alalign-items: center;
+}
+ .content h2{
+   padding:20px;
+  margin:20px 0;
+   font-size:70px;
+   width:500px;
+   background: gold;
+   border:3px solid black;
+
+ }
+ 
+ .content p{
+   padding:20px;
+   margin:20px 0;
+   font-size: 20px;
+   width:500px;
+   color: darkslategray;
+ }
+ 
+ #
+ 
+ .content button{
+   padding:20px;
+   font-size:20px ;
+ }
+ 
+ .content .image-box{
+   margin-top:70px;
+   width:700px;
+   height:500px;
+ }
+ 
+ .image-box img{
+   width: 100%;
+ }
+ 
+ .navbar {
+  background-color: #2C3E50;
+}
+
+body {
+  background-color: #F8F9FA;
+}
+
+h2 {
+  color: #2C3E50; /* أو #E74C3C */
+}
+
+p {
+  color: #333333;
+}
+
+.button {
+  background-color: #3498DB;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+}
+
+.types{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width:500px;
+  height: 70px;
+}
+
+.types .Orange{
+  width:112px;
+  height:95%;
+  background: orangered;
+  color:orange;
+  border: 3px solid black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+
+
+}.types .Orange:hover {
+  border: 3px solid gold;
+  background-image: url(orange.jpeg);
+background-size:cover ;
+color: transparent;
+  
+}
+.types .Cola {
+  width: 112px;
+  height: 95%;
+  background: #3B2F2F;
+  color:white;
+  border: 3px solid black;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+
+
+}.types .Cola:hover {
+border: 3px solid gold;
+background-image: url(cola.jpeg);
+background-size:cover;
+color: transparent;}
+.types .Watermelon {
+  width: 112px;
+  height: 95%;
+  color:white;
+  background: #FC6C85;
+  border: 3px solid black;
+  display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+
+
+}.types .Watermelon:hover {
+  border: 3px solid gold;
+   background-image: url(watermelon.jpeg);
+ background-size:cover;
+ color: transparent;
+}
+.types .Lemon {
+  width: 112px;
+  height: 95%;
+  background: #CCFF00;
+  color:green;
+  border: 3px solid black;
+  display: flex;
+justify-content: center;
+align-items: center;
+transition: 0.5s;
+}.types .Lemon:hover{
+  border: 3px solid gold;
+     background-image: url(lemon.jpeg);
+   background-size:cover;
+   color: transparent;
+
+}
+
+#flavors{
+  width:100%;
+  height:700px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#flavors div{
+  padding: 10px;
+  margin: 10px 0;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#flavors div img{
+
+  border:5px solid #123;
+  width:300px;
+  height:300px;
+} #flavors div img:hover{
+  border:5px solid gold;
+
+}
+
+#flavors div h3{
+  font-size:30px;
+}
+#flavors div .orange{color: orangered;}
+#flavors div .watermelon{color:#FC6C85;}
+#flavors div .lime{color: green;}
+#flavors div .cola{color:#3B2F2F;}
+
+#flavors div p{
+  font-size: 20px;
+text-align: center;
+}
+
+#Testimonials{
+  width: 100%;
+  height:500px;
+  text-align: center;
+}
+
+#Testimonials h2{
+  font-size:50px;
+padding: 10px;
+margin:10px 0;
+}
+
+#Testimonials .comments-box{
+   display:flex;
+ justify-content: space-evenly;
+ align-items: center;
+  width:95%;
+  margin-top:30px;
+}
+
+#Testimonials .comments-box .comments{
+  background: antiquewhite;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  margin:30px;
+  border:4px solid black;
+  width:70%;
+
+}
+
+#Testimonials .comments .image-box{
+  width:100px;
+  height:50px;
+  overflow: hidden;
+  border-radius: 10px;
+border:2px solid #123;
+}
+#Testimonials .comments .img-box img{
+width:100px;
+height:50px;
+}
+
+#Testimonials .comments h3{
+  text-align: center;
+  font-size: 30px;
+}
+
+#Testimonials .comments q {
+  text-align: center;
+  font-size: 15px;
+}
+
+  .contact-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.address, .contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.copy {
+  width:100%;
+  background: #123;
+  text-align: center;
+  padding:0;
+  margin:0;
+}
+
+.copy p{
+  color:white;
+  padding: 5px;
+}
