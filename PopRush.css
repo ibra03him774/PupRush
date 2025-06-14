@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-*{
+
+.logo , a , h2 , h3{
   font-family: "Alfa Slab One", serif;
   font-weight: 400;
   font-style: normal;
 }
+
+*{ font-family:"Lexend",sans-serif;
+   font-optical-sizing: auto;
+   font-weight:bold;
+   font-style: normal; }
 
 html {
   scroll-behavior: smooth;
@@ -17,11 +24,11 @@ body{
 }
 
 header{
-  padding: 20px;
+  margin:10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  width: 98%;
   background: #123;
   border:3px solid darkorange;
 
@@ -29,6 +36,7 @@ header{
 }
 .logo{
   color: orangered;
+  padding:10px;
 } 
 nav{
   width:60%;
@@ -59,6 +67,7 @@ nav ul li a{
 }nav ul li a:hover{background: gold; border-radius: 5px; border:5px solid orangered; color:black}
 
 .content{
+  margin:10px;
   width:100%;
   height:600px;
   display:flex;
@@ -67,23 +76,25 @@ nav ul li a{
 }
  .content h2{
    padding:20px;
-  margin:20px 0;
+  margin:10px 0;
    font-size:70px;
    width:500px;
    background: gold;
    border:3px solid black;
+   margin-top:30px;
+   margin-bottom: 0;
 
  }
  
  .content p{
-   padding:20px;
-   margin:20px 0;
+   padding:10px;
    font-size: 20px;
    width:500px;
    color: darkslategray;
+   margin-top:10px;
  }
  
- #
+ 
  
  .content button{
    padding:20px;
@@ -91,13 +102,14 @@ nav ul li a{
  }
  
  .content .image-box{
-   margin-top:70px;
-   width:700px;
-   height:500px;
+   margin-top:40px;
+   width:760px;
+   height:510px;
  }
  
  .image-box img{
    width: 100%;
+   height:100%;
  }
  
  .navbar {
@@ -123,86 +135,12 @@ p {
   padding: 10px 20px;
 }
 
-.types{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width:500px;
-  height: 70px;
-}
 
-.types .Orange{
-  width:112px;
-  height:95%;
-  background: orangered;
-  color:orange;
-  border: 3px solid black;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
+.orange{ color: orangered}
+.lemon{ color: #CCFF00}
+.watermelon{ color: #FC6C85}
+.cola{ color: #3B2F2F}
 
-
-}.types .Orange:hover {
-  border: 3px solid gold;
-  background-image: url(orange.jpeg);
-background-size:cover ;
-color: transparent;
-  
-}
-.types .Cola {
-  width: 112px;
-  height: 95%;
-  background: #3B2F2F;
-  color:white;
-  border: 3px solid black;
-display: flex;
-justify-content: center;
-align-items: center;
-transition: 0.5s;
-
-
-}.types .Cola:hover {
-border: 3px solid gold;
-background-image: url(cola.jpeg);
-background-size:cover;
-color: transparent;}
-.types .Watermelon {
-  width: 112px;
-  height: 95%;
-  color:white;
-  background: #FC6C85;
-  border: 3px solid black;
-  display: flex;
-justify-content: center;
-align-items: center;
-transition: 0.5s;
-
-
-}.types .Watermelon:hover {
-  border: 3px solid gold;
-   background-image: url(watermelon.jpeg);
- background-size:cover;
- color: transparent;
-}
-.types .Lemon {
-  width: 112px;
-  height: 95%;
-  background: #CCFF00;
-  color:green;
-  border: 3px solid black;
-  display: flex;
-justify-content: center;
-align-items: center;
-transition: 0.5s;
-}.types .Lemon:hover{
-  border: 3px solid gold;
-     background-image: url(lemon.jpeg);
-   background-size:cover;
-   color: transparent;
-
-}
 
 #flavors{
   width:100%;
@@ -228,18 +166,18 @@ transition: 0.5s;
   border:5px solid #123;
   width:300px;
   height:300px;
+  border-radius: 20px;
+  transition: 0.5s;
 } #flavors div img:hover{
   border:5px solid gold;
+  width:320px;
+ height:320px;
 
 }
 
 #flavors div h3{
   font-size:30px;
 }
-#flavors div .orange{color: orangered;}
-#flavors div .watermelon{color:#FC6C85;}
-#flavors div .lime{color: green;}
-#flavors div .cola{color:#3B2F2F;}
 
 #flavors div p{
   font-size: 20px;
@@ -247,7 +185,7 @@ text-align: center;
 }
 
 #Testimonials{
-  width: 100%;
+  width: 95%;
   height:500px;
   text-align: center;
 }
@@ -260,14 +198,16 @@ margin:10px 0;
 
 #Testimonials .comments-box{
    display:flex;
- justify-content: space-evenly;
- align-items: center;
-  width:95%;
+  justify-content: center;
+  align-items: center;
+  width:100%;
   margin-top:30px;
+  margin-left:20px;
 }
 
 #Testimonials .comments-box .comments{
   background: antiquewhite;
+  opacity: 0.7;
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -275,21 +215,11 @@ margin:10px 0;
   padding: 10px;
   margin:30px;
   border:4px solid black;
+  border-radius: 20px;
   width:70%;
 
 }
 
-#Testimonials .comments .image-box{
-  width:100px;
-  height:50px;
-  overflow: hidden;
-  border-radius: 10px;
-border:2px solid #123;
-}
-#Testimonials .comments .img-box img{
-width:100px;
-height:50px;
-}
 
 #Testimonials .comments h3{
   text-align: center;
@@ -298,7 +228,8 @@ height:50px;
 
 #Testimonials .comments q {
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
+  font-weight:bold;
 }
 
   .contact-flex {
@@ -339,13 +270,11 @@ height:50px;
 
 .copy {
   width:100%;
-  background: #123;
-  text-align: center;
   padding:0;
-  margin:0;
+  text-align: center;
 }
 
 .copy p{
-  color:white;
+  color:#123;
   padding: 5px;
 }
